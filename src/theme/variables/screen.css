@@ -1,0 +1,23 @@
+@custom-media --screen-xs-minwidth (min-width: 480px);
+@custom-media --screen-xs-maxwidth (max-width: 480px);
+@custom-media --screen-sm-minwidth (min-width: 768px);
+@custom-media --screen-sm-maxwidth (max-width: 768px);
+@custom-media --screen-breakwidth-sm-md (max-width: 996px);
+@custom-media --screen-md-minwidth (min-width: 996px);
+@custom-media --screen-md-maxwidth (max-width: 996px);
+@custom-media --screen-lg-minwidth (min-width: 1200px);
+@custom-media --screen-lg-maxwidth (max-width: 1200px);
+
+.mainPageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.mainContentWrapper {
+  flex: 1 0 auto;
+  @media (--screen-sm-maxwidth) {
+    width: 100%;
+  }
+}

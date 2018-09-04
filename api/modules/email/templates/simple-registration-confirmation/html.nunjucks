@@ -1,0 +1,14 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+  {% if userName %}
+    <h1>Welkom bij Tippiq, {{ userName }}</h1>
+  {% else %}
+    <h1>Welkom bij Tippiq</h1>
+  {% endif %}
+  <br>
+  <br>
+  Regel en beheer al jouw huisregels met Tippiq.<br>
+  Wil je jouw huisregels aanpassen of inzien? Stel dan hier een wachtwoord in.<br>
+  <br>
+  <a class="btn-primary" href="{{ frontendTippiqIdBaseUrl }}/wachtwoord-instellen?token={{ resetPasswordToken }}">Een wachtwoord instellen</a>
+{% endblock %}

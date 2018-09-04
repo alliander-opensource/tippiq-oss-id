@@ -1,0 +1,21 @@
+@import '../common';
+
+.green-line {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $tippiq-green;
+  margin: 20px 0 !important;
+}
+
+.policies td {
+  padding: 10px 0 !important;
+}
+
+.policy-checked {
+  width: 40px;
+  max-width: 40px;
+}
+
+.policy-title {
+  font-weight: bold;
+}

@@ -1,0 +1,72 @@
+// from BS v4 https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+@mixin _assert-ascending($map, $map-name) {
+  $prev-key: null;
+  $prev-num: null;
+  @each $key, $num in $map {
+    @if $prev-num != null and $prev-num >= $num {
+      @warn "Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+    }
+    $prev-key: $key;
+    $prev-num: $num;
+  }
+}
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+
+// Colors
+$brand-primary: #60cda2;
+$state-danger-text: #ef2942;
+$state-danger-bg: #fbe8eb;
+$state-danger-border: #fdbec8;
+$inactiveText: #777777;
+
+// Base font
+$font-size-base: 16px !default;
+$font-weight-base: 300;
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+// Container
+$container-large-desktop: 910px;
+$container-desktop: 910px;
+
+// Headings
+$font-size-h1: $font-size-base * 1.75;
+$headings-line-height: 1.2;
+$headings-font-weight: 600;
+
+// Panels
+$panel-bg: #f3f3f3;
+$panel-border-radius: 0;
+$panel-default-border: #e4e4e4;
+$panel-body-padding: 30px 36px;
+$panel-heading-padding: 40px 36px 0;
+$font-size-panel-heading: $font-size-base;
+
+// Forms
+$padding-base-vertical: 10px;
+$input-border: #c7c8c8;
+$input-color-placeholder: #ababab;
+$input-color: #171819;
+$input-border-focus: $input-border;
+$btn-default-border: $brand-primary;
+$btn-default-color: $brand-primary;
+
+// Buttons
+$btn-font-weight: 300;
+
+// Footer
+$footer-bg: #f3f3f3;
+$footer-links-font-size: 14px;
+$footer-height: 93px;

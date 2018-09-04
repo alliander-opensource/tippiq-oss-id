@@ -1,0 +1,65 @@
+@import 'variables';
+
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+body {
+  background-color: $body-background-color;
+}
+
+.body-wrap {
+  background-color: $body-background-color;
+  width: 100%;
+  padding: 0 20px;
+  line-height: $line-height-base;
+}
+
+.container {
+  display: block !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  /* makes it centered */
+  clear: both !important;
+}
+
+.content {
+  max-width: 600px;
+  min-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.main {
+  width: 100%;
+}
+
+.logo-cell {
+  background-color: #333333;
+  border-radius: 6px 6px 0 0;
+  height: 70px;
+  padding: 15px 40px;
+}
+
+.main-content {
+  text-align: left;
+  min-height: 200px;
+  padding: 40px;
+  background-color: #fff;
+  line-height: 24px;
+  color: #333333;
+}
+
+.main-divided-content {
+  text-align: left;
+  min-height: 200px;
+  padding: 0;
+  line-height: 24px;
+  color: #333333;
+}
+
+.footer-cell {
+  width: 100%;
+  background-color: #e4e4e4;
+  border-radius: 0 0 6px 6px;
+}
+

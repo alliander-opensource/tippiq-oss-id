@@ -1,0 +1,9 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+  <h1>Je e-mailadres is gewijzigd</h1>
+    <br>
+    <br>
+    Het e-mailadres van je Tippiq Account is gewijzigd.
+    Dit e-mailadres is niet langer aan je Tippiq Account gekoppeld.<br>
+    <br>
+{% endblock %}

@@ -1,0 +1,17 @@
+@startuml
+
+title "Logging in at Tippiq-id using IRMA"
+
+start
+
+:Click on 'Login with IRMA';
+
+:Scan QR-code;
+
+:Send e-mail and uuid attribute\nto Tippiq-id with IRMA app;
+
+:Logged in!;
+
+stop
+
+@enduml

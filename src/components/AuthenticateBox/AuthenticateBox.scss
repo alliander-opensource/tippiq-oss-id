@@ -1,0 +1,22 @@
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+.links {
+  padding-top: 19px;
+  font-size: 14px;
+}
+
+.links-single {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.panel {
+  margin-bottom: 0;
+}
+
+@media (max-width: $screen-sm-min) {
+  .box {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}

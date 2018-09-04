@@ -1,0 +1,41 @@
+{% set sender = "tippiq-places" %}
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+{% if policies|length %}
+  <h1>Jouw huisregels voor {{ serviceName }}</h1>
+  <br>
+  Je hebt je huisregels voor {{ serviceName }} ingesteld of aangepast.<br>
+  <br>
+  In deze mail hebben we je huisregels voor deze dienst nog even op een rijtje gezet:<br>
+  <br>
+  <hr class="green-line">
+  <table class="policies">
+      <tr>
+        <td class="policy-checked">
+          <img src="{{ frontendTippiqIdBaseUrl }}/static/images/email/icon-checked.gif">
+        </td>
+        <td class="policy-title">
+          Ik gebruik Tippiq Huisregels om mijn toestemmingen te regelen voor de dienst {{ serviceName }},
+          en geef {{ serviceName }} toestemming om mijn huisregels voor deze dienst uit te lezen.
+        </td>
+      </tr>
+    {% for policy in policies %}
+      <tr>
+        <td class="policy-checked">
+          <img src="{{ frontendTippiqIdBaseUrl }}/static/images/email/icon-checked.gif">
+        </td>
+        <td class="policy-title">{{ policy.title }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  <hr class="green-line">
+{% else %}
+  <h1>{{ serviceName }} uitgezet</h1>
+  <br>
+  Je hebt de huisregels voor {{ serviceName }} aangepast en verwijderd.<br>
+  Hierdoor is de dienst gedeactiveerd.<br>
+  <br>
+  Wil je toch gebruik maken van deze dienst?<br>
+  Dan zul je de huisregels weer moeten activeren.
+{% endif %}
+{% endblock %}

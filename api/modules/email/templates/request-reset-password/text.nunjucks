@@ -1,0 +1,3 @@
+Klik op de link om een nieuw wachtwoord in te stellen
+
+{{ frontendTippiqIdBaseUrl }}/nieuw-wachtwoord-instellen?token={{ resetPasswordToken }}{% if client_id %}&clientId={{ client_id }}{% endif %}{% if returnParams %}&returnParams={{ returnParams }}{% endif %}

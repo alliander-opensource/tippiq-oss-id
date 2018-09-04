@@ -1,0 +1,38 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+<table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="main-content" align="left" width="100%">
+          <h1>Je Tippiq Huis is gebouwd!</h1>
+          <br>
+          Klik op de knop hieronder om je  e-mailadres te bevestigen.
+          <br>
+          <br>
+          <a class="btn-primary" href="{{ frontendTippiqIdBaseUrl }}/email-bevestigd?token={{ token }}&returnUrl={{ returnUrl | urlencode }}">Bevestigen</a>
+      </td>
+    </tr>
+    <tr>
+        <td class="row-spacer" align="left" width="100%"></td>
+    </tr>
+    <tr>
+      <td class="main-content" align="left" width="100%">
+        <h1>Nieuwe dienst Tippiq Buurt geactiveerd.</h1>
+        <br>
+        
+        {% if policies %}
+        Je hebt de volgende huisregels voor deze dienst ingesteld:
+        <br>
+        <ul class="check-mark-list">
+            {% for policy in policies %}
+              <li>{{ policy.title }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+      </td>
+    </tr>
+    <tr>
+      <td class="row-spacer" align="left" width="100%"></td>
+    </tr>
+</table>
+{% endblock %}

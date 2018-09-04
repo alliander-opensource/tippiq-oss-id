@@ -1,0 +1,7 @@
+Er is een bericht ingestuurd via het contactformulier:
+
+Naam: {{ name }}
+E-mailadres: {{ email }}
+Onderwerp: {{ subject }}
+
+{{ body }}

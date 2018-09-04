@@ -1,0 +1,15 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "plugins": ["node_modules/jsdoc-babel"],
+  "source": {
+    "include": ["./api"],
+    "includePattern": ".+\\.js$"
+  },
+  "opts": {
+    "encoding": "utf8",
+    "destination": "reports/jsdoc/api",
+    "recurse": true
+  }
+}

@@ -1,0 +1,16 @@
+{{ textTop }}
+
+{% for place in places %}
+{{ place.name }}
+  {% for card in place.cards %}
+  {{ card.title }}
+    {{ (card.distance / 1000) | round(1) }}
+    {{ card.description }}
+  {% endfor %}
+{% endfor %}
+
+{{ textBottom }}
+
+{% if unsubscribeURL %}
+  Meld je af voor deze email: {{ unsubscribeURL }}
+{% endif %}

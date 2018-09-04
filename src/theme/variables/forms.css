@@ -1,0 +1,11 @@
+@import "./colors.css";
+
+:root {
+  --paddingBaseVertical: 10px;
+  --inputBorderColor: #c7c8c8;
+  --inputColorPlaceholder: #ababab;
+  --inputColor: #171819;
+  --inputBorderFocus: var(--inputBorderColor);
+  --btnDefaultBorder: var(--primary);
+  --btnDefaultColor: var(--primary);
+}

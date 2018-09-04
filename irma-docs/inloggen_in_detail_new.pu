@@ -1,0 +1,37 @@
+@startuml
+
+title "Logging in with IRMA at tippiq-id with IRMA Api Server callback"
+
+participant tp_id_frontend
+participant tp_id_backend
+participant api_server
+participant user
+
+tp_id_frontend -> tp_id_backend: GET /api/irma/generate-login-request
+tp_id_backend -> api_server: POST sprequest /api/v2/verification
+api_server -> tp_id_backend: SessionToken
+
+tp_id_backend -> tp_id_backend : Store SessionToken
+
+tp_id_backend -> tp_id_frontend: SessionToken + QR Url
+
+tp_id_frontend -> tp_id_frontend: Store SessionToken
+
+tp_id_frontend -> user: QR(SessionToken)
+
+
+group user interaction
+  user -> user: contact api-server and\nagree with proof
+  ... waiting ...
+end
+
+
+api_server -> tp_id_backend: POST JWT(validity + attributes)
+
+group polling
+  tp_id_frontend -> tp_id_backend: POLL /api/irma/retrieve-login-token/SessionToken
+  ... waiting ...
+  tp_id_backend -> tp_id_frontend: Bearer token
+end
+
+@enduml

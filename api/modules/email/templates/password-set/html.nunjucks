@@ -1,0 +1,11 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+  <h1>Je wachtwoord is ingesteld</h1>
+  <br>
+  <br>
+  Het door jou ingestelde wachtwoord is vanaf nu aan je Tippiq account gekoppeld. Log voortaan in
+  met dit wachtwoord.
+  <br>
+  <br>
+  Klopt dit niet? Neem dan zo snel mogelijk contact op met <a href="mailto:team@tippiq.nl">team@tippiq.nl</a>.
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+    {% if userName %}
+        <h1>Welkom bij Tippiq, {{ userName }}</h1>
+    {% else %}
+        <h1>Welkom bij Tippiq</h1>
+    {% endif %}
+    <br>
+    <br>
+    Je hebt nu een bewonersaccount.
+    Met dit bewonersaccount regel je vanaf nu eenvoudig en vertrouwd diensten voor en rond je huis.
+{% endblock %}

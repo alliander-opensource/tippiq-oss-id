@@ -1,0 +1,12 @@
+:root {
+  --primary: #60cda2;
+  --danger: #ef2942;
+  --whiteColor: #fff;
+  --textColor: rgba(96,205,162,1);
+  --chevronInactiveColor: #ABABAB;
+  --filterBorderBottomColor: #DDDDDD;
+  --inactiveText: #777777;
+  --active: #60CDA2;
+  --grey-6: #ABABAB;
+  --borderRightColor: #000;
+}

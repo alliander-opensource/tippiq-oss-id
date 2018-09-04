@@ -1,0 +1,5 @@
+Vergeet je e-mailadres niet te bevestigen!
+
+Ga in je browser naar:
+
+{{ frontendTippiqIdBaseUrl }}/email-bevestigd?token={{ token }}

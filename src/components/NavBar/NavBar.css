@@ -1,0 +1,246 @@
+@import "../../theme/variables/colors.css";
+@import "../../theme/variables/screen.css";
+
+.position {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.resident,
+.residentName,
+.placeTitle {
+  margin-left: 5px;
+  @media (--screen-xs-maxwidth) {
+      margin-left: 0;
+  }
+}
+
+.headerImage {
+  height: inherit;
+  margin-top: -10px;
+  @media (--screen-xs-maxwidth) {
+    width: 200px;
+  }
+}
+
+.buttonTextHolder {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.residentAnchor {
+  margin-left: 5px;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.residentName,
+.placeTitle {
+  font-size: 14px;
+}
+
+.placeTitle {
+  color: #FFF;
+}
+
+.dropdownContent {
+  padding: 15px;
+}
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (--screen-xs-maxwidth) {
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+  }
+}
+
+.navBar {
+  background: #333;
+  color: var(--primary);
+  height: 80px;
+  @media (--screen-xs-maxwidth) {
+    height: 74px;
+    margin-bottom: 74px;
+  }
+}
+
+.navBarNavigation {
+  float: left;
+  @media (--screen-xs-maxwidth) {
+    clear: both;
+    display: table;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+.navBarHeader {
+  align-items: center;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: rgba(23,24,25,1);
+  border-style: solid;
+  border-top-color: transparent;
+  border-width: 1px;
+  display: flex;
+  height: 78px;
+  justify-content: center;
+  padding-right: 30px;
+  width: 280px;
+  margin-right: 0 !important;
+  @media (--screen-xs-maxwidth) {
+    border-right-color: transparent;
+    height: 70px;
+    padding-right: 0;
+    padding-left: 15px;
+    width: 200px;
+  }
+}
+
+.navBarBrand {
+  @media (--screen-xs-maxwidth) {
+    height: 60px;
+  }
+}
+
+.dropDownLabel {
+  @media (--screen-xs-maxwidth) {
+    display: none;
+  }
+}
+
+.navBarBlock {
+  &:first-child {
+    margin-left: 40px;
+  }
+  & .navBarItem {
+    align-items: center;
+    display: flex;
+    float: left;
+    height: 80px;
+    justify-content: center;
+    @media (--screen-xs-maxwidth) {
+      display: table-cell;
+      height: 74px;
+      width: 33%;
+    }
+    & a {
+      text-align: center;
+    }
+  }
+  & .navBarDropdown {
+    align-items: center;
+    background-color: #090909;
+    display: flex;
+    float: right;
+    height: 80px;
+    justify-content: center;
+    width: 243px;
+
+    @media (--screen-xs-maxwidth) {
+      margin-right: -15px;
+      position: initial;
+    }
+
+    @media (--screen-xs-maxwidth) {
+      height: 74px;
+      width: 67px;
+    }
+  }
+}
+
+.headerButtonBlock {
+  margin: 0;
+  padding: 0;
+  background-color: transparent!important;
+  border: 0;
+  display: flex;
+  border-radius: 0;
+  white-space: initial;
+  font-size: initial;
+  color: #FFF;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    border: 0;
+    color: #FFF;
+    background-color: transparent;
+  }
+}
+
+
+.navBarItem:hover {
+  &::before {
+    border-bottom: 3px solid rgba(96,205,162,1);
+    bottom: 0;
+    content: '';
+    height: 80px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.navBarDropdown {
+  &> ul {
+    border: 0;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    background-color: rgba(51,51,51,1);
+    min-width: auto;
+    width: 100%;
+    margin: 0;
+
+    @media (--screen-xs-maxwidth) {
+      background-color: #4a4a4a;
+    }
+  }
+
+  &> ul > li > a {
+    color: #fff;
+    padding: 15px 15px;
+
+    &:hover {
+      background-color: rgba(96,205,162,1);
+      color: #fff;
+      user-select: none;
+    }
+  }
+}
+
+.iconAccount {
+  background-image: url('../../static/svgIcons/account-off.svg');
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 31px;
+  width: 27px;
+  margin-top: 12px;
+&:hover {
+   background-image: url('../../static/svgIcons/account-on.svg');
+ }
+}
+
+.iconHuis {
+  background-image: url('../../static/svgIcons/huis-off.svg');
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 31px;
+  width: 33px;
+  margin-top: 12px;
+&:hover {
+   background-image: url('../../static/svgIcons/huis-on.svg');
+ }
+}

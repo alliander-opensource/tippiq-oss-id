@@ -1,0 +1,35 @@
+@import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../theme/pre-bootstrap-customizations/variables";
+
+.logo {
+  height: 70px;
+  line-height: 70px;
+  background-image: url('/static/images/tippiq-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $screen-sm-min) {
+    height: inherit;
+    line-height: inherit;
+    padding: 25px;
+    border: 1px solid $brand-primary;
+    width: 170px;
+    border-top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    @include position(absolute, 0 14px null null);
+  }
+}
+
+.text {
+  font-size: floor($font-size-small);
+
+  @media (min-width: $screen-sm-min) {
+    font-size: $font-size-base;
+    max-width: 140px;
+    display: inline-block;
+    line-height: 1.7em;
+    vertical-align: middle;
+  }
+}

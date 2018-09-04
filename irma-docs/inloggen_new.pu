@@ -1,0 +1,14 @@
+@startuml
+
+state "User" as user
+state "Service Provider" as sp
+state "IRMA Api Server" as irma
+
+user -> sp : (1) Visit website (start IRMA-flow)
+sp -> irma : (2) sprequest
+irma -> sp : (3) SessionToken
+sp -> user : (4) SessionToken in QR
+user -> irma : (5) Disclosure Proof
+irma -> sp : (6) JWT with proof validity and attributes
+
+@enduml

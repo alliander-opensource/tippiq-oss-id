@@ -1,0 +1,382 @@
+@import "./sticky-footer";
+@import "./fonts/open-sans";
+
+
+
+// Override Bootstrap styles that you can't modify via variables here.
+body {
+  font-weight: 100;
+  background-color: #f8f8f8;
+}
+
+p, input, textarea, select, button, meter, progress {
+  font-weight: $font-weight-base;
+  padding-top: 30px;
+}
+
+.navbar-inverse .caret, .nav-dropdown .caret {
+  border: 0;
+  background-image: url('../static/svgIcons/caret.svg');
+  height: 9px;
+  width: 16px;
+  margin-left: 10px;
+}
+
+.nav-dropdown .caret {
+  margin-top: 5px;
+}
+
+.navbar-inverse .caret{
+  margin-top: 12px;
+}
+
+@media (max-width: $screen-sm-min) {
+  .navbar-inverse .caret {
+    display: none;
+  }
+}
+
+.navbar {
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+  &:hover {
+    color: $brand-primary;
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  .navbar-inverse .navbar-nav > li > a {
+    color: #ababab;
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}
+
+.font-main {
+  font-family: 'Open Sans';
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar-header {
+  float: left;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.navbar.navbar-default {
+  >.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+mark {
+  background-color: transparent;
+  color: $brand-primary;
+}
+
+.discreet {
+  font-size: 14px;
+  font-style: italic;
+  color: $gray-light;
+}
+
+.list-links {
+  color: $brand-primary;
+  padding-left: 20px;
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+.form-control:focus {
+  background-color: #fbf8df;
+}
+
+.panel {
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.05)
+}
+
+.panel-heading {
+  border-bottom: 0;
+  font-size: $font-size-panel-heading;
+  font-weight: $headings-font-weight;
+}
+
+.panel > .panel-heading {
+  background-color: $panel-bg;
+}
+
+.panel-title {
+  font-size: $font-size-panel-heading;
+}
+
+.panel .list-group-item {
+  background-color: $panel-bg;
+}
+
+@media (max-width: $screen-sm-min) {
+  .panel-heading, .panel-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+.modal-header {
+  border-bottom: 0;
+  border-radius: 6px 6px 0 0;
+  background-color: #fafafa;
+}
+
+.modal-content {
+  border: solid 1px #999;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus {
+  background-color: $btn-default-bg;
+  color: darken($btn-default-border, 25%);
+}
+
+hr {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  font-family: "FontAwesome";
+  line-height: 1;
+  border-radius: 2px;
+  border: solid 1px $input-border;
+  background-color: #fff;
+  .has-error & {
+    border-color: $state-danger-text;
+  }
+  &:checked {
+    background-color: $brand-primary;
+    border: solid 1px $brand-primary;
+    &:before {
+      color: #fff;
+      content: "\f00c";
+      font-size: 13px;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    &:checked {
+      background-color: #fff;
+      border: solid 1px $input-border;
+      &:before {
+        color: $brand-primary;
+        left: 1px;
+        top: 1px;
+      }
+    }
+  }
+}
+
+.checkbox input[type="checkbox"], .radio input[type="radio"]
+.checkbox-inline input[type="checkbox"] {
+  margin-left: -36px;
+}
+
+.checkbox label, .radio label  {
+  padding-left: 36px;
+}
+
+.alert {
+  font-size: 14px;
+  padding: 12px;
+}
+
+.form-group {
+  .text-danger {
+    font-size: 14px;
+    padding: 6px 0 0 2px;
+  }
+}
+
+.list-group-item {
+  padding: 20px 15px;
+
+  &.has-error {
+    background-color: #fbe8eb;
+    .text-danger {
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .checkbox label {
+      color: $text-color;
+    }
+  }
+
+  &.collapse-header {
+    border-top: 0;
+    color: $brand-primary;
+    font-size: 14px;
+    text-transform: uppercase;
+    &.in {
+      background-color: darken($brand-primary, 15%);
+      border-color: transparent;
+      color: #fff;
+    }
+    .fa {
+      font-size: 17px;
+    }
+  }
+
+  &.collapse-body {
+    background-color: $brand-primary;
+    border-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  &.checked {
+    padding-left: 51px;
+    &:before {
+      color: $brand-primary;
+      content: "\F00C";
+      font-family: "FontAwesome";
+      left: 16px;
+      position: absolute;
+    }
+  }
+}
+
+.navbar-inverse {
+  .navbar-nav {
+    .active {
+        &::before {
+          border-bottom: 3px solid $brand-primary;
+          bottom: 0;
+          content: '';
+          height: 80px;
+          position: absolute;
+          width: 100%;
+        }
+
+        a, a:hover, a:focus {
+          font-weight: 600;
+          color: $brand-primary;
+          background-color: transparent;
+        }
+      }
+
+  }
+}
+
+.nav-stacked {
+  li {
+    a {
+      font-weight: 600;
+      color: $inactiveText;
+      &:hover{
+        color: $brand-primary;
+        background-color: transparent;
+      }
+    }
+
+    &.active {
+      a {
+        color: $brand-primary;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.nav-dropdown {
+  li {
+    a {
+      font-weight: 600;
+      color: $inactiveText;
+      &:hover{
+        color: $brand-primary;
+        background-color: transparent;
+      }
+    }
+
+    &.active {
+      a {
+        color: $brand-primary;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.dropdown.nav-dropdown {
+  .dropdown-toggle {
+    margin: 0 20px 20px 0;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: $brand-primary;
+    border: 0;
+    display: flex;
+    white-space: initial;
+    font-size: initial;
+    color: #fff;
+    justify-content: left;
+
+    .caret{
+      float: right;
+      margin-left: auto;
+    }
+
+    & :hover,
+    & :focus {
+      border: 0;
+      background-color: $brand-primary;
+      color: #fff;
+    }
+
+    & span {
+      font-size: 20px;
+    }
+  }
+
+  .dropdown-menu {
+    width:100%;
+
+    li a {
+      height:50px;
+      line-height:50px;
+    }
+  }
+}
+
+.content-wrapper {
+  padding-bottom: 50px;
+}

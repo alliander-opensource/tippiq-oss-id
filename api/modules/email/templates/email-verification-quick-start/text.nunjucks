@@ -1,0 +1,16 @@
+Je Tippiq Huis is gebouwd!
+
+Ga, om je e-mailadres te bevestigen, in je browser naar:
+
+{{ frontendTippiqIdBaseUrl }}/email-bevestigd?token={{ token }}&returnUrl={{ returnUrl | urlencode }}
+
+Nieuwe dienst Tippiq Buurt geactiveerd.
+Je hebt de volgende huisregels voor deze dienst ingesteld:
+
+{% if policies %}
+
+    {% for policy in policies %}
+      {{ policy.title }}
+    {% endfor %}
+
+{% endif %}

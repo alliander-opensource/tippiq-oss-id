@@ -1,0 +1,11 @@
+Voltooi je account
+
+Je hebt een Tippiq Account aangemaakt.
+Om in te kunnen loggen heb je een wachtwoord nodig.
+
+Ga naar {{ frontendTippiqIdBaseUrl }}/voltooi-account?token={{ setupPasswordToken }} om de
+je wachtwoord in te stellen.
+
+Met vriendelijke groet,
+
+Team Tippiq

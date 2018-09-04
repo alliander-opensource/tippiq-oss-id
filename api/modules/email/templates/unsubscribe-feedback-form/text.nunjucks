@@ -1,0 +1,6 @@
+Er is een bericht ingestuurd via het uitschrijven feedbackformulier:
+
+Naam: {{ templateData.userName }}
+E-mailadres: {{ userEmail }}
+
+{{ templateData.feedback }}

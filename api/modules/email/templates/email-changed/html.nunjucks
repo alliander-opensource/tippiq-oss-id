@@ -1,0 +1,7 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+  <h1>Dit e-mailadres is nu gekoppeld aan je Tippiq Account</h1>
+  <br>
+  <br>
+  Gebruik voortaan dit adres om in te loggen.
+{% endblock %}

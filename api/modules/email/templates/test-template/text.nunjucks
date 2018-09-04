@@ -1,0 +1,2 @@
+Test template
+Template data example: username: {{ userName }}

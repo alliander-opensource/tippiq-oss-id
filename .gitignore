@@ -1,0 +1,18 @@
+# Node
+node_modules
+coverage
+reports
+webpack-assets.json
+webpack-stats.json
+npm-debug.log
+yarn-error.log
+dist
+build
+
+# Other
+.DS_Store
+reports
+
+# IDE
+.idea
+.swp

@@ -1,0 +1,15 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+  <h1>Voltooi je account</h1>
+  <br>
+  <br>
+  Je hebt een Tippiq Account aangemaakt.
+  Om in te kunnen loggen heb je een wachtwoord nodig.<br>
+  <br>
+  <a class="btn-primary" style="min-width: 250px;"
+     href="{{ frontendTippiqIdBaseUrl }}/voltooi-account?token={{ setupPasswordToken }}">
+    Wachtwoord instellen
+  </a>
+  <br>
+  <br>
+{% endblock %}

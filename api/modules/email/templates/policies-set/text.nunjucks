@@ -1,0 +1,25 @@
+{% extends templatePath + "/../base-notification-email/text.nunjucks" %}
+{% block content -%}
+{% if policies|length -%}
+Jouw huisregels voor {{ serviceName }}
+
+Je hebt je huisregels voor {{ serviceName }} ingesteld of aangepast.
+
+In deze mail hebben we je huisregels voor deze dienst nog even op een rijtje gezet:
+
+Ik gebruik Tippiq Huisregels om mijn toestemmingen te regelen voor de dienst {{ serviceName }},
+en geef {{ serviceName }} toestemming om mijn huisregels voor deze dienst uit te lezen.
+{% for policy in policies %}
+  {{ policy.title }}
+{% endfor %}
+{% else -%}
+{{ serviceName }} uitgezet.
+
+Je hebt de huisregels voor {{ serviceName }} aangepast en verwijderd.
+Hierdoor is de dienst gedeactiveerd.
+
+Wil je toch gebruik maken van deze dienst?
+Dan zul je de huisregels weer moeten activeren.
+
+{% endif -%}
+{% endblock %}

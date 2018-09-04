@@ -1,0 +1,29 @@
+@startuml
+
+title "Registreren bij Tippiq-id"
+
+start
+
+:Account maken;
+note right: "Nu: wel Tippiq\n, geen IRMA"
+
+if (e-mail gevalideerd?) then (ja)
+else (nee)
+    :Valideer email (via link);
+endif
+
+:Laad IRMA-attributen in app;
+
+if (IRMA gelukt) then (ja)
+    :Sla op dat iemand IRMA heeft;
+    note left: "Nu: wel Tippiq\n, wel IRMA"
+else (nee)
+    :Helaas?;
+    stop
+endif
+
+:Gelukt!;
+
+stop
+
+@enduml

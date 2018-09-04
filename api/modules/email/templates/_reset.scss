@@ -1,0 +1,24 @@
+@import 'variables';
+
+/* -------------------------------------
+    GLOBAL
+    A very basic CSS reset
+------------------------------------- */
+* {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: $font-size-base;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  width: 100% !important;
+  height: 100%;
+  line-height: $line-height-base;
+}
+
+/* Let's make sure all tables have defaults */
+table td {
+  vertical-align: top;
+}

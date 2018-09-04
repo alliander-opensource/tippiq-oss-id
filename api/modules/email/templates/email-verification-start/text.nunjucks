@@ -1,0 +1,3 @@
+Klik op de link hieronder om je e-mailadres te bevestigen
+
+{{ frontendTippiqIdBaseUrl }}/email-bevestigd?token={{ token }}&returnUrl={{ returnUrl }}

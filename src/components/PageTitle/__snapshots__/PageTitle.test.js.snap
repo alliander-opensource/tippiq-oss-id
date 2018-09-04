@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`with id 1`] = `
+<h1
+  className={undefined}
+  id="test-id"
+>
+  Title
+</h1>
+`;
+
+exports[`with nested elements in title 1`] = `
+<h1
+  className={undefined}
+>
+  Title 
+  <span>
+    with
+  </span>
+   nesting
+</h1>
+`;
+
+exports[`with null id 1`] = `
+<h1
+  className={undefined}
+>
+  Title
+</h1>
+`;
+
+exports[`with plain text title 1`] = `
+<h1
+  className={undefined}
+>
+  Title
+</h1>
+`;

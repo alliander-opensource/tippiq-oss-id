@@ -1,0 +1,49 @@
+@import "../../theme/variables/colors.css";
+@import "../../theme/variables/screen.css";
+
+.cookieWrapper {
+  align-items: center;
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+  display: flex;
+  min-height: 50px;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  padding: 0 30px;
+  @media (--screen-sm-maxwidth) {
+    padding: 10px 15px;
+  }
+}
+
+.text {
+  flex: 4;
+  font-size: 14px;
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+
+.button {
+  background: #fff;
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  color: #60cda2;
+  float: right;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px;
+  position: relative;
+  width: 155px;
+  &:before {
+    color: var(--primary);
+    content: "\F00C";
+    font-family: FontAwesome;
+    left: 10px;
+    position: absolute;
+  }
+}
+
+.highLight {
+  color: #60cda2;
+  cursor: pointer;
+}

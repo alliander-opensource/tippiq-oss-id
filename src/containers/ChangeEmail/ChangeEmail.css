@@ -1,0 +1,15 @@
+@import "../../theme/variables/colors.css";
+
+.link {
+  padding: 0;
+}
+
+.bigIcon {
+  font-size: 20px;
+}
+
+.strong {
+  font-weight: bold;
+  padding: 0 6px;
+  color: var(--inactiveText);
+}

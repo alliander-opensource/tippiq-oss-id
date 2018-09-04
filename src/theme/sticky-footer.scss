@@ -1,0 +1,18 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "./pre-bootstrap-customizations/variables";
+
+// Sticky footer implementation from: http://mystrd.at/modern-clean-css-sticky-footer/
+@media (min-width: $screen-sm-min) {
+  html {
+    min-height: 100%;
+    position: relative;
+  }
+
+  .footer-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+  }
+}

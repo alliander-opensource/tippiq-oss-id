@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic render snapshot test 1`] = `
+<div
+  id="page-change-username"
+>
+  <HelmetWrapper
+    title="Mijn Account | Naam wijzigen"
+  />
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={true}
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        xs={12}
+      >
+        <PageTitle>
+          Naam wijzigen
+        </PageTitle>
+      </Col>
+    </Row>
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        xs={12}
+      >
+        <p>
+          Je kunt hier je naam invullen zodat we je netjes aan kunnen spreken.
+        </p>
+        <br />
+      </Col>
+    </Row>
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        xs={12}
+      />
+    </Row>
+  </Grid>
+</div>
+`;

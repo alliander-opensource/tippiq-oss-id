@@ -1,0 +1,8 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+  <h1>Klik op de knop om een nieuw wachtwoord in te stellen</h1>
+  <br>
+  <br>
+  <a class="btn-primary" href="{{ frontendTippiqIdBaseUrl }}/nieuw-wachtwoord-instellen?token={{ resetPasswordToken }}{% if client_id %}&clientId={{ client_id }}{% endif %}{% if returnParams %}&returnParams={{ returnParams }}{% endif %}">Stel een nieuw wachtwoord in</a>
+  <br>
+{% endblock %}

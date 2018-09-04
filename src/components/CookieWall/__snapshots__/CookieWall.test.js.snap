@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders 1`] = `
+<div
+  className={undefined}
+>
+  <p
+    className={undefined}
+  >
+    Tippiq gebruikt Cookies.
+     
+    <a
+      className={undefined}
+      href={undefined}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Lees hier waarom.
+    </a>
+     
+    Als je doorgaat, accepteer je het gebruik van deze cookies.
+  </p>
+  <button
+    className={undefined}
+    id="btnAgree"
+    onClick={undefined}
+  >
+    Ik ga akkoord
+  </button>
+</div>
+`;

@@ -1,0 +1,7 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+  <h1>Vergeet je e-mailadres niet te bevestigen!</h1>
+  <br>
+  <br>
+  <a class="btn-primary" href="{{ frontendTippiqIdBaseUrl }}/email-bevestigd?token={{ token }}">Bevestig je e-mailadres</a>
+{% endblock %}

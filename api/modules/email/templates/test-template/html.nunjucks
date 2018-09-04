@@ -1,0 +1,3 @@
+<h1>Test template</h1>
+<p>Templatedata example: username: {{ userName }}</p>
+

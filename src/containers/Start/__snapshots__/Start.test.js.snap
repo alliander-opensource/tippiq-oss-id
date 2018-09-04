@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic render snapshot test 1`] = `
+<div
+  id="page-start"
+>
+  <HelmetWrapper
+    title="Tippiq Account aanmaken"
+  />
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        xs={12}
+      >
+        <PageTitle>
+          Tippiq 
+          <span
+            className="text-primary"
+          >
+            Account
+          </span>
+           aanmaken
+        </PageTitle>
+      </Col>
+      <Col
+        bsClass="col"
+        componentClass="div"
+        lg={7}
+        sm={6}
+        xs={12}
+      >
+        <p>
+          Hiermee sluit je eenvoudig diensten aan op je Tippiq 
+          <span
+            className="text-primary"
+          >
+            Huis
+          </span>
+          . Bovendien kun je hiermee gemakkelijk de toegang tot je digitale huis beheren.
+        </p>
+      </Col>
+      <Col
+        bsClass="col"
+        className="register-form"
+        componentClass="div"
+        lg={5}
+        sm={6}
+        xs={12}
+      >
+        <ConnectedForm
+          errorMessage=""
+          initialValues={
+            Object {
+              "email": undefined,
+            }
+          }
+          loginUrl="/login?email=&redirect_uri=%2Fstart%3Fredirect_uri%3Dundefined%26failure_uri%3Dundefined%26clientId%3Dundefined"
+          onSubmit={[Function]}
+        />
+      </Col>
+    </Row>
+  </Grid>
+</div>
+`;

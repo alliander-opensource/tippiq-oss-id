@@ -1,0 +1,6 @@
+Welkom bij Tippiq
+
+Regel en beheer al jouw huisregels met Tippiq.
+Wil je jouw huisregels aanpassen of inzien?
+
+Stel je wachtwoord in via: {{ frontendTippiqIdBaseUrl }}/wachtwoord-instellen?token={{ resetPasswordToken }}

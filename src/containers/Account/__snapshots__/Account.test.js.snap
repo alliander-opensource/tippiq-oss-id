@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic render snapshot test 1`] = `
+<div>
+  <HelmetWrapper
+    title="Mijn Account"
+  />
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        sm={3}
+        xs={12}
+      >
+        <AccountMenu />
+      </Col>
+      <Col
+        bsClass="col"
+        componentClass="div"
+        sm={9}
+        xs={12}
+      >
+        <div>
+          content
+        </div>
+      </Col>
+    </Row>
+  </Grid>
+</div>
+`;

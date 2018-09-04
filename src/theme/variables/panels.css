@@ -1,0 +1,11 @@
+@import "./fonts.css";
+
+:root {
+  --panelBg: #f3f3f3;
+  --panelBorderRadius: 0;
+  --panelDefaultBorder: #e4e4e4;
+  --panelBodyPadding: 30px 36px;
+  --panelHeadingPadding: 30px 36px 0 15px;
+  --panelHeadingFontSize: var(--base);
+  --panelHeadingFontWeight: 600;
+}

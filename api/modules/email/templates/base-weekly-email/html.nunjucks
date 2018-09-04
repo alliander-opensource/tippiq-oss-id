@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="viewport" content="width=device-width"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+</head>
+<body itemscope itemtype="http://schema.org/EmailMessage">
+<br>
+<br>
+<table class="body-wrap" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="container" width="600">
+      <div class="content">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center">
+              {% if onlineVersionURL %}
+                <p class="outer-header">
+                  <br>
+                  Bericht niet goed leesbaar?
+                  &nbsp;&nbsp;
+                  <a href="onlineVersionURL">Bekijk de online versie</a>
+                </p>
+              {% endif %}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="main" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="main-content" align="left" width="100%">
+                    <br>
+
+                    <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="logo-cell">
+                          <a href="{{ frontendBaseUrl }}">
+                            <img src="{{ frontendBaseUrl }}/images/email/tippiq_logo_white_mail.gif" alt="Tippiq logo" style="height: 30px;max-height: 30px;">
+                          </a>
+                        </td>
+                        <td style="width: 100%; padding-left: 20px;">
+                          <hr class="hr-logo" />
+                        </td>
+                      </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <br>
+                    {% block content %}
+                    {% endblock %}
+                  </td>
+                </tr>
+                <tr>
+                  <td class="footer-cell" align="left">
+                    <table class="footer" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="footer-spacer">&nbsp;</td>
+                        <td class="footer-text-item">
+                          <a href="{{ frontendBaseUrl }}/privacy">Privacy belofte</a>
+                          &nbsp;&nbsp;|&nbsp;&nbsp;
+                          <a href="{{ frontendBaseUrl }}/contact">Contact</a>
+                        </td>
+                        <td>&nbsp;</td>
+                        {# This td serves to take up space that is left over in the row #}
+                        <td class="footer-share-icon">
+                          <a href="https://www.facebook.com/Tippiq-1430219107214646">
+                            <img src="{{ frontendBaseUrl }}/images/email/icon_facebook_green.gif" alt="Facebook link">
+                          </a>
+                        </td>
+                        <td class="footer-share-icon">
+                          <a href="https://twitter.com/Tippiq">
+                            <img src="{{ frontendBaseUrl }}/images/email/icon_twitter_green.gif" alt="Twitter link">
+                          </a>
+                        </td>
+                        <td class="footer-share-icon">
+                          <a href="https://plus.google.com/+TippiqNl">
+                            <img src="{{ frontendBaseUrl }}/images/email/icon_googleplus_green.gif" alt="Google Plus link">
+                          </a>
+                        </td>
+                        <td class="footer-spacer">&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <p class="outer-footer">
+                Je ontvangt deze mail omdat je hebt aangegeven deze wekelijks te willen ontvangen.
+              </p>
+              <p class="outer-footer">
+                {% if unsubscribeURL %}
+                  <a href="{{ unsubscribeURL }}">Meld je af voor deze e-mail</a>
+                {% endif %}
+                <br>
+                <br>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

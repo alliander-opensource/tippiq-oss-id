@@ -1,0 +1,11 @@
+{% extends templatePath + "/../base-notification-email/html.nunjucks" %}
+{% block content %}
+  <h1>Bericht uit het uitschrijven feedbackformulier:</h1>
+  <br>
+  <br>
+  Naam: {{ userName }}<br>
+  E-mailadres: {{ userEmail }}<br>
+  <br>
+  {{ feedback }}
+  <br>
+{% endblock %}
