@@ -169,7 +169,7 @@
     "passport": "0.3.2",
     "passport-http": "0.3.0",
     "passport-jwt": "2.1.0",
-    "pg": "6.1.0",
+    "pg": "7.12.1",
     "phantomjs": "1.9.19",
     "pick-react-known-prop": "0.1.1",
     "piping": "1.0.0-rc.4",
