@@ -125,7 +125,7 @@
     "classnames": "2.2.5",
     "compression": "1.6.2",
     "copy-webpack-plugin": "4.0.1",
-    "debug": "2.3.2",
+    "debug": "4.1.1",
     "debugnyan": "2.0.1",
     "deferential": "1.0.0",
     "email-templates": "2.5.3",
