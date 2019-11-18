@@ -152,7 +152,7 @@
     "knex": "0.10.0",
     "less": "2.7.1",
     "less-loader": "2.2.2",
-    "lodash": "4.16.2",
+    "lodash": "4.17.15",
     "lru-memoize": "1.0.1",
     "map-props": "1.0.0",
     "mocha-junit-reporter": "1.13.0",
