@@ -210,7 +210,7 @@
     "socket.io-client": "1.5.1",
     "store2": "2.3.2",
     "strip-loader": "0.1.2",
-    "superagent": "2.3.0",
+    "superagent": "5.1.0",
     "traverse": "0.6.6",
     "universal-webpack": "0.1.40",
     "uuid": "2.0.3",
