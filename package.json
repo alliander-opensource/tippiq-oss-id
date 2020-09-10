@@ -142,7 +142,7 @@
     "geojsonhint": "1.2.1",
     "healthcheck-middleware": "1.0.1",
     "hoist-non-react-statics": "1.2.0",
-    "http-proxy": "1.15.1",
+    "http-proxy": "1.18.1",
     "invariant": "2.2.2",
     "ismobilejs": "0.4.0",
     "jasmine-reporters": "2.2.1",
